@@ -1,0 +1,213 @@
+/* Media queries */
+@media only screen and (max-width: 600px) {
+
+    h1 {
+        margin-top: 20px;
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    .small-image {
+        max-width: 200px;
+    }
+
+    .button-container {
+        margin-top: 10px;
+    }
+
+    .custom-button {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+
+    .skills-list li {
+        font-size: 12px;
+    }
+
+    navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar ul {
+        margin-top: 10px;
+    }
+
+    .navbar ul li {
+        margin: 10px 0;
+    }
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e2f5ff;
+    padding-bottom: 50px;
+}
+
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    /* To make the button position relative to the header */
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+h1 {
+    color: #176fd4;
+    text-align: center;
+    margin-top: 40px;
+}
+
+p {
+    margin: 0 auto;
+    max-width: 600px;
+    text-align: center;
+    line-height: 1.6;
+}
+
+.small-image {
+    display: block;
+    margin: 20px auto;
+    max-width: 300px;
+    transition: max-width 0.3s ease-in-out;
+}
+
+/* Add hover effect to the image */
+.small-image:hover {
+    transform: scale(1.1);
+}
+
+.button-container {
+    text-align: center;
+    /* Center the buttons horizontally */
+    margin-top: 20px;
+}
+
+.custom-button {
+    padding: 10px 20px;
+    background-color: #5ca7cf;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 5px 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.custom-button:hover {
+    background-color: #7ac3e5;
+    transform: scale(1.05);
+}
+
+/* Skills heading styles */
+#skills-heading {
+    text-align: center;
+    background-color: #7ac3e5;
+}
+
+.skills-list {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+.skills-list {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+.skills-list li {
+    display: inline-block;
+    background-color: #b3d7ea;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+/* Add hover effect to list items */
+.skills-list li:hover {
+    background-color: #7ac3e5;
+}
+
+.skills-list li span {
+    display: inline-block;
+    padding: 5px 10px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    background-color: #89bcdb;
+    padding: 10px 0;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+.navbar ul li {
+    margin: 0 20px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.navbar ul li a:hover {
+    color: #020202;
+    background-color: #b3d7ea;
+}
+
+.registration-button {
+    position: absolute;
+    /* Position the button absolutely */
+    top: 20px;
+    /* Adjust top position as needed */
+    right: 20px;
+    /* Adjust right position as needed */
+}
+
+.register-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.register-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}

@@ -1,0 +1,148 @@
+#bg-video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 80%;
+    min-height: 80%;
+    width: auto;
+    height: 130%;
+    z-index: -1;
+}
+
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+    #bg-video {
+        width: 100%;
+        height: auto;
+        min-width: initial;
+        min-height: initial;
+    }
+
+    header {
+        padding: 15px;
+    }
+
+    .navbar ul li {
+        margin: 0 30px;
+    }
+
+    .navbar ul li a {
+        font-size: 16px;
+    }
+
+    .container {
+        margin-top: 80px;
+    }
+
+    .contact-info {
+        padding: 15px;
+        max-width: 400px;
+    }
+
+    .contact-info h2 {
+        font-size: 20px;
+    }
+}
+
+header {
+    background-color: rgba(51, 51, 51, 0.5);
+    /* Adjust the RGBA values and alpha (opacity) as needed */
+    color: #fff;
+    /* Text color */
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    /* Set the header as fixed */
+    top: 0;
+    /* Stick the header to the top */
+    left: 0;
+    /* Stick the header to the left */
+    right: 0;
+    /* Stick the header to the right */
+    width: 100%;
+    /* Ensure the header spans the full width */
+    z-index: 1000;
+    /* Ensure the header is above other content */
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    /* background-color: #89bcdb; */
+    padding: 10px 0;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    /* Add margin reset */
+}
+
+.navbar ul li {
+    margin: 0 70px;
+    /* Increase margin between li elements */
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s;
+    font-size: 18px;
+    /* Increase font size */
+}
+
+.navbar ul li a:hover {
+    color: #020202;
+    background-color: #b3d7ea;
+}
+
+.container {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.contact-info {
+    background-color: rgba(187, 235, 245, 0.315);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.contact-info h2 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #000000;
+    display: inline-block;
+    /* background-color: #b3d7ea63; */
+    padding: 5px 10px;
+    margin-bottom: 20px;
+}
+
+.contact-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-info ul li {
+    margin-bottom: 10px;
+}
+
+.social-link {
+    display: inline-block;
+    background-color: #2166cd;
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.social-link:hover {
+    background-color: #020202;
+}
