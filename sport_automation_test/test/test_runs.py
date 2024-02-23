@@ -1,6 +1,8 @@
 import concurrent.futures.thread
 import time
 import unittest
+from functools import partial
+
 from selenium import webdriver
 import concurrent.futures
 from selenium.webdriver.common.by import By
@@ -25,39 +27,14 @@ class gridProject(unittest.TestCase):
         for cab,num in self.basePage.cab_list:
             self.test_execute_live_filter(cab,num)
 
-    # def test_run_grid_parell(self):
-    #     with concurrent.futures.ThreadPoolExecutor(max_workers=len(self.basePage.cab_list)) as executor:
-    #         futures = []
-    #
-    #         for cab, num in self.basePage.cab_list:
-    #             futures.append(executor.submit(self.test_execute_language, cab, num))
-    #
-    #         for future in concurrent.futures.as_completed(futures):
-    #             future.result()
-    #
-    #         futures = []
-    #
-    #         for cab, num in self.basePage.cab_list:
-    #             futures.append(executor.submit(self.test_execute_theme, cab, num))
-    #
-    #         for future in concurrent.futures.as_completed(futures):
-    #             future.result()
-    #
-    #         futures = []
-    #
-    #         for cab, num in self.basePage.cab_list:
-    #             futures.append(executor.submit(self.test_execute_search, cab, num))
-    #
-    #         for future in concurrent.futures.as_completed(futures):
-    #             future.result()
-    #
-    #         futures = []
-    #
-    #         for cab, num in self.basePage.cab_list:
-    #             futures.append(executor.submit(self.test_execute_live_filter, cab, num))
-    #
-    #         for future in concurrent.futures.as_completed(futures):
-    #             future.result()
+    def test_run_grid_parallel(self):
+        with concurrent.futures.ThreadPoolExecutor(max_workers=len(self.basePage.cab_list)) as executor:
+            # Create a list of partial functions, each with one cap argument fixed
+            partial_functions = [partial(self.test_execute_language, cap) for cap in self.basePage.cab_list]
+            # Execute the partial functions in parallel
+            executor.map(lambda f: f(), partial_functions)
+
+
 
     def test_execute_language(self, caps,num):
         self.basePage.driver_set_up(caps)
