@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="be2580a4-eca1-408d-b168-f81a927e60f3" name="Changes" comment="" />
+    <list default="true" id="be2580a4-eca1-408d-b168-f81a927e60f3" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../appiumProject/.idea/appiumProject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../appiumProject/.idea/appiumProject.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../appiumProject/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../appiumProject/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -30,7 +34,7 @@
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/mhmdh/Desktop/all_course/beyond-dev-projects/youtube_test_case_project&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/mhmdh/Desktop/new_final/final_automation_project/final_project_code&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.Mappings&quot;
   }
 }</component>
